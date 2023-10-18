@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'ubuntuNode1'
+        label 'debian'
     }
     stages {
         stage('pre -build') {
@@ -17,7 +17,7 @@ pipeline {
         }
         stage('build and Deploy') {
             agent {
-                label 'ubuntuNode1'
+                label 'debian'
             }
             steps {
                 script {
@@ -36,7 +36,7 @@ pipeline {
         }
         stage('Unit tests') {
             agent {
-                label 'ubuntuNode1'
+                label 'debian'
             }
             steps {
                 sh 'echo Running unit tests'
