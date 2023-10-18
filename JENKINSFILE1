@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'apt-get install neofetch -y'
+                sh 'neofetch'
             }
         }
     }
