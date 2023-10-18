@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'bash <(curl -s https://raw.githubusercontent.com/dylanaraps/neofetch/master/neofetch)'
+                sh 'curl -s https://raw.githubusercontent.com/dylanaraps/neofetch/master/neofetch | bash'
             }
         }
     }
